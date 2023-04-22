@@ -74,7 +74,7 @@ export default function Home() {
 
   return (
     <main className="flex h-screen items-center justify-center bg-neutral-OffWhite">
-      <div className="flex h-[500px] w-[345px] flex-col justify-evenly rounded-t-[25px] rounded-bl-[25px] rounded-br-[125px] bg-neutral-White p-6 md:w-[500px]">
+      <div className="flex h-[500px] w-[90%] flex-col justify-evenly rounded-t-[25px] rounded-bl-[25px] rounded-br-[125px] bg-neutral-White p-6 md:w-[500px]">
         {/* Inputs */}
         <div className="mb-6 flex gap-6">
           <div className="flex flex-col">
@@ -154,13 +154,19 @@ export default function Home() {
 
         {/* Age */}
         <div className="">
-          <p className={`text-6xl leading-tight ${poppins800i.className}`}>
+          <p
+            className={`text-4xl leading-tight sm:text-6xl ${poppins800i.className}`}
+          >
             <span className="text-primary-Purple">{yearsSince}</span> years
           </p>
-          <p className={`text-6xl leading-tight ${poppins800i.className}`}>
+          <p
+            className={`text-4xl leading-tight sm:text-6xl ${poppins800i.className}`}
+          >
             <span className="text-primary-Purple">{monthsSince}</span> months
           </p>
-          <p className={`text-6xl leading-tight ${poppins800i.className}`}>
+          <p
+            className={`text-4xl leading-tight sm:text-6xl ${poppins800i.className}`}
+          >
             <span className="text-primary-Purple">{daysSince}</span> days
           </p>
         </div>
